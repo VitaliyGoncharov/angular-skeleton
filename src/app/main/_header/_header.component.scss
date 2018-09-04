@@ -1,0 +1,88 @@
+$header-height: 50px;
+
+#header {
+    display: flex;
+    height: $header-height;
+    width: 100%;
+    background-color: rgb(91, 116, 226);
+
+    .tel, ul { display: block }
+    .tel { 
+        align-self: center;
+        margin-left: 10px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+    }
+    ul {
+        margin-left: auto;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 10px;
+            height: 100%;
+            
+            a {
+                display: inline-block;
+                height: 100%;
+                font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+                line-height: $header-height;
+            }
+
+            &:hover {
+                background-color: #4962d2;
+            }
+        }   
+    }
+    #user {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: 10px;
+
+        #accountLink {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+        }
+        #username {
+            margin-right: 5px;
+            color: #fff;
+        }
+        #avatar {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin-right: 3px;
+            vertical-align: bottom;
+        }
+        .fa-angle-down { margin-right: 3px; cursor: pointer; }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 100px;
+            background-color: #fff;
+            border: 1px solid #a4a4a4;
+            border-radius: 4px;
+
+            a {
+                display: block;
+                padding-left: 10px;
+                color: black;
+                text-decoration: none;
+                line-height: 30px;
+                border-radius: inherit;
+
+                &:hover { background-color: #ececec; }
+            }
+        }
+    }
+}

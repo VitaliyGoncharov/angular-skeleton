@@ -1,0 +1,20 @@
+<div id="header">
+    <div class="tel" routerLink="/">+1 (242) 234-42-12</div>
+    
+    <ul class="visitorTabs" *ngIf="!isLoggedIn">
+        <li><a href="#" (click)="login()">Log in</a></li>
+        <li><a href="#">Sign in</a></li>
+    </ul>
+    <div id="user" *ngIf="isLoggedIn">
+        <a id="accountLink" href="#">
+            <strong id="username">David</strong>
+            <img id="avatar" src="https://lh3.googleusercontent.com/zFwzo3mS8o47KuJj3HWBAKjB0Aem__fbxIu1U1sD47DtYQ5SddBKXwLIodIO24qpWS51vuCldw=w640-h400-e365" alt="">
+        </a>
+        <i class="fas fa-angle-down dropdown-toogle"></i>
+
+        <div class="dropdown">
+            <a href="#">Profile</a>
+            <a href="#" (click)="logout()">Log out</a>
+        </div>
+    </div>
+</div>

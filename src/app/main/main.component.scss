@@ -1,0 +1,10 @@
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: .375em .75em;
+    background-color: blue;
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    &:hover { background-color: rgb(106, 106, 245); }
+}
