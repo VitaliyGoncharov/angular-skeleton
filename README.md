@@ -15,7 +15,7 @@ At the first time I tried to add resolver for parent component [AppComponent]. H
 <router-outlet></router-outlet>
 ```
 
-I found out that angular bootstraps AppComponent immediately and we can see ONLY header block. And when resolver get data, angular render (duplicate) header and content from <router-outlet>.
+I found out that angular bootstraps AppComponent immediately and we can see ONLY header block. And when resolver get data, angular render (duplicate) header and content from `<router-outlet>`.
 
 Then I added MainModule and MainComponent as the base of app. Then replaced resolver from AppComponent to MainComponent.
 ```TypeScript
